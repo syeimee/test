@@ -49,5 +49,7 @@ module Rails7Sample
 
     config.hosts << ENV.fetch('APP_DOMAIN', nil)
     config.hosts << 'lvh.me'
+    config.hosts << 'rails7-sample-staging.onrender.com'
+    config.hosts << 'rails7-sample-production-wh72.onrender.com'
   end
 end
