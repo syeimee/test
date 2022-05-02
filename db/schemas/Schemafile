@@ -1,0 +1,2 @@
+# 投稿関連
+require 'posts.schema'

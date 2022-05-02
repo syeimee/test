@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: rails7_sample_development
+  username: rails7_sample
+
+test:
+  <<: *default
+  database: rails7_sample_test
+  username: rails7_sample
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

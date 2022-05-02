@@ -1,0 +1,83 @@
+require:
+  - rubocop-rspec
+  - rubocop-rails
+
+Rails:
+  Enabled: true
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - "vendor/bundle/**/*"
+    - ",/**/*"
+    - ".git/**/*"
+    - "bin/*"
+    - "db/schema.rb"
+    - "db/migrate/*.rb"
+    - "log/**/*"
+    - "node_modules/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+    - "config/initializers/*"
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "app/views/**/*"
+    - "config/**/*.rb"
+    - "spec/factories/**/*.rb"
+    - "Guardfile"
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: true
+
+Style/MixinGrouping:
+  Enabled: true
+  Exclude:
+    - "rails_helper.rb"
+    - "spec/spec_helper.rb"
+    - "spec/**/*_spec.rb"
+
+Style/RedundantBegin:
+  Enabled: false
+
+# Settings for rspec
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Exclude:
+    - "spec/requests/**/*_spec.rb"
+
+RSpec/NestedGroups:
+  Enabled: true
+  Max: 4
+
+RSpec/ContextWording:
+  Enabled: false

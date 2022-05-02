@@ -1,0 +1,67 @@
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
+config/initializers/secret_token.rb
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Mac finder artifacts
+.DS_Store
+
+# RubyMine project files
+.idea
+
+# vim artifacts
+**.swp
+
+# config
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+config/certs/*
+
+# webpack
+/public/packs
+/public/packs-test
+/public/assets
+/node_modules
+yarn-debug.log*
+.yarn-integrity
+yarn-error.log
+
+# image
+/public/uploads
+
+# simplecov
+coverage
+
+
+/yarn-error.log
+master.key
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+/config/master.key
